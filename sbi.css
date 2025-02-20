@@ -1,0 +1,217 @@
+
+.container{
+    width: 700px !important;
+    border:1px solid #000;
+    padding-bottom: 40px !important;
+
+}
+.home{
+    
+background-image: url("white-background-candle-stick-graph-260nw-2064054938.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.home::after{
+    content: "";
+    width: 80%;
+    height: 5px;
+    background-image: linear-gradient(to right, #292075, #581b78, #7e1176, #9e016f, #ba0065, #ba0065, #ba0065, #ba0065, #9e016f, #7e1176, #581b78, #292075);    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+  
+
+.row{
+    /* padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important; */
+}
+.img{
+    
+}
+h2{
+    color: #292075 !important;
+}
+h1{
+    background-image: linear-gradient(to right, #2e2074, #621975, #8b0d6f, #ac0864, #c61e55);
+    padding: 15px 21px; 
+border-radius: 99px;
+font-size: 15px !important; 
+margin-top: 20px !important; 
+color: #fff !important;
+border: 3px solid #fff; /* Inner Border */
+z-index: 1;
+  
+}
+
+
+
+
+
+
+
+
+p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #292075;
+}
+.ticket{
+    position: relative;
+    display: inline-block;  
+
+}
+
+  .ticket::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 80%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    filter: blur(8px);
+    transform: translateX(-50%);
+  }
+  .btn-primary{
+    background-color: #d71e53 !important;
+    border: none !important;
+    padding: 5px 30px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+  }
+  .heading{
+    background-image: linear-gradient(to right, #2e2074, #621975, #8b0d6f, #ac0864, #c61e55);
+    margin-left:-12px;
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.heading-con{
+    width: 600px !important;
+    margin-left: -95px;
+
+}
+/* .one{
+    border-radius: 20px 20px 0px 50px;
+    border: 4px solid;
+    border-image: linear-gradient(to bottom,  #292075, #581b78, #7e1176, #9e016f, #ba0065, #ba0065, #ba0065, #ba0065, #9e016f, #7e1176, #581b78, #292075 50%, #ffffff 50%) 1;
+
+    position: relative;
+    box-shadow: 0 0 20px;
+
+} */
+ .one{
+    position: relative;
+    border-radius: 20px 20px 0px 50px; /* Apply the border-radius here */
+    padding: 10px;
+    background: white; /* Background of card */
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+ }
+ .triangle{
+    width: 110px;
+    height: 15px;
+    position: absolute;
+    background-color: #292075;
+    transform: rotate(135deg);
+   bottom:27px;
+   right: -20px;
+   z-index: -1;
+ }
+ .one::before{
+    content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px 20px 0px 50px; /* Match border-radius */
+  padding: 4px; /* Border thickness */
+  background: linear-gradient(to bottom, #302174, #681a77, #950972, #ba0065, #d71e53 , 30%, #ffffff 30%);
+  -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+ }
+.one::after{
+    content:"01";
+    position: absolute;
+    background-image: linear-gradient(to right, #2e2074, #621975, #8b0d6f, #ac0864, #c61e55);  
+      width: 80px;
+    height: 80px;
+    background:  linear-gradient(to right, #2e2074, #621975, #8b0d6f, #ac0864, #c61e55);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+    bottom: -10px;
+    right: -10px;
+}
+.span{
+    font-size: 11px;
+    margin-top: -15px;
+}
+.img1{
+    position: absolute;
+    width: 60px;
+    top: 200px;
+}
+.img2{
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    width: 70px;
+
+}
+.img3{
+    position: absolute;
+    left: 300px;
+    top: 70px;
+    width: 70px;
+
+}
+.img4{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    width: 70px;
+
+}
+.img5{
+    position: absolute;
+   right: 10px;
+    bottom: 20px;
+    width: 70px;
+
+}
+
+
+
+
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 480px) {
+    
+.container{
+width: 100%;
+} 
+.cards{
+    width: 70% !important;
+    
+} 
+.cards-con{
+    display: flex;
+    justify-content: center;
+}  
+}
+
+/* Small Devices (Phones) */
+@media only screen and (max-width: 576px) {
+    .element {
+        /* Styles for most smartphones */
+    }
+}
+
+
+  
+
+  
