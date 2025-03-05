@@ -55,6 +55,7 @@ z-index: 1;
 
 
 
+
 p{
     font-size: 12px;
     font-weight: 500;
@@ -233,6 +234,21 @@ body {
     margin-top: 30px;
     max-width: 600px !important;
     display: none;
+}
+.fa-instagram{
+    color: orangered;
+}
+.fa-facebook{
+    color: #292075;
+}
+.fa-linkedin{
+    color: #302174;
+}
+.fa-youtube{
+    color: red;
+}
+.blue{
+    background-color: #292075;
 }
 
 
