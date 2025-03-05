@@ -84,6 +84,8 @@ p{
     font-weight: 600 !important;
     font-size: 14px !important;
     border-radius: 4px !important;
+    text-decoration: none !important;
+    color: #ffffff !important;
   }
   .heading{
     background-image: linear-gradient(to right, #2e2074, #621975, #8b0d6f, #ac0864, #c61e55);
@@ -136,7 +138,7 @@ p{
   mask-composite: exclude;
  }
 .one::after{
-    content:"01";
+    content:"";
     position: absolute;
     background-image: linear-gradient(to right, #2e2074, #621975, #8b0d6f, #ac0864, #c61e55);  
       width: 80px;
@@ -189,29 +191,92 @@ p{
 
 
 /* Extra Small Devices (Phones) */
+
+.featuresImg img{
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.features-container {
+    max-width: 800px !important;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px dashed #d3d3d3;
+    border-radius: 15px;
+    position: relative;
+    display:none;
+}
+
+.features-title {
+    display: inline-block;
+    background: linear-gradient(to right, #2e2074, #D30C5C);
+    color: white !important;
+    font-size: 20px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 600px !important;
+    display: none;
+}
+
+
 @media only screen and (max-width: 480px) {
     
-.container{
-width: 100%;
-} 
-.cards{
-    width: 70% !important;
-    
-} 
-.cards-con{
-    display: flex;
-    justify-content: center;
-}  
-}
-
-/* Small Devices (Phones) */
-@media only screen and (max-width: 576px) {
-    .element {
-        /* Styles for most smartphones */
+    .container{
+    width: 100%;
+    } 
+    .cards{
+        width: 70% !important;
+        
+    } 
+    .cards-con{
+        display: flex;
+        justify-content: center;
+    } 
+    .featuresImg{
+        display: none;
+    } 
+    .features-container{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
     }
-}
-
-
-  
-
-  
+    .features{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        display: block;
+    }
+    .feature-box img{
+        width: 280px;
+        height: 250px;
+        margin-left: 55px;
+        margin-bottom: 20px;
+    }
+    .one::after{
+        width: 320px;
+    }
+    }
+    
+    @media (max-width: 768px) {
+       
+    }
+    
